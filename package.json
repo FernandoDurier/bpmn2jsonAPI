@@ -1,0 +1,29 @@
+{
+  "name": "bpm_handler",
+  "version": "1.0.0",
+  "description": "alternative for bpmn 2 nlg project in java ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fernando Cardoso Durier da Silva",
+  "license": "ISC",
+  "dependencies": {
+    "bpmn": "^0.2.2",
+    "bpmn-js": "^0.19.0",
+    "bpmn-js-cli": "^0.15.0",
+    "bpmn-js-differ": "^0.2.0",
+    "bpmn-js-properties-panel": "^0.12.0",
+    "bpmn-moddle": "^0.14.0",
+    "canvg-browser": "^1.0.0",
+    "ee-xml-to-json": "^1.0.1",
+    "express": "^4.15.0",
+    "fs": "0.0.1-security",
+    "json-beautify": "^1.0.1",
+    "json2csv": "^3.7.3",
+    "nlp_compromise": "^6.5.3",
+    "q": "^1.4.1",
+    "request": "^2.79.0",
+    "xml2js": "^0.4.17"
+  }
+}
