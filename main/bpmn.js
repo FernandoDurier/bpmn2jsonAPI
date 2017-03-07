@@ -23,3 +23,22 @@ fs.readFile('./bpmn/teste de xml.xml', function(err, data) {
 return (bpDefer.promise);
 
 }
+
+exports.bpmn2jsonP = function(xml,name){
+  var bpDefer = Q.defer();
+  var parser = new xml2js.Parser();
+
+  parser.parseString(xml, function (err, result) {
+      //console.log(beautify(result,null,2,100));
+      //console.log(result.process.laneSet[0].lane);
+      bpDefer.resolve(result);
+      fs.writeFile('./bpmn/'+name+'.json',JSON.stringify(result),function(err,data){
+        if(err){
+          console.log(err);
+        }
+      });
+      console.log('Done');
+  });
+
+  return bpDefer.promise;
+}
