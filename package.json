@@ -19,6 +19,7 @@
     "canvg-browser": "^1.0.0",
     "ee-xml-to-json": "^1.0.1",
     "express": "^4.15.0",
+    "formidable": "^1.1.1",
     "fs": "0.0.1-security",
     "json-beautify": "^1.0.1",
     "json2csv": "^3.7.3",

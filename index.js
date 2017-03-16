@@ -12,7 +12,7 @@ var getBPJSON = function(req,res){
 }
 var postBPJSON = function(req,res){
   bp.bpmn2jsonP(req.body.xml,req.body.name).then(function(data){
-    console.log(data);
+    console.log("JSON: ",data);
     res.status(200);
     res.end(JSON.stringify(data));
   });
@@ -25,8 +25,11 @@ app.use(bodyParser.json());       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 }));
+app.use(express.bodyParser({uploadDir:'./uploads'}));
+
 
 app.get('/bpmn',getBPJSON);
 app.post('/bpmn2json',postBPJSON);
 
-app.listen(3000)
+
+app.listen(3000);
