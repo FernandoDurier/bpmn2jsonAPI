@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://www.wfmc.org/2008/XPDL2.1" xmlns:xpdExt="http://www.tibco.com/XPD/xpdExtension1.0.0" Language="Spanish" Id="canvas">
+  <ConformanceClass GraphConformance="NON-BLOCKED" BPMNModelPortabilityConformance="STANDARD" />
+  <Script Type="http://www.w3.org/TR/XPath" />
+  <Pools>
+    <Pool BoundaryVisible="true" MainPool="false" Process="sid-0E7BB551-0389-40D6-8B07-A3ECAB297AC1-process" Orientation="HORIZONTAL" Id="sid-0E7BB551-0389-40D6-8B07-A3ECAB297AC1" Name="Presentación de tesis">
+      <Lanes>
+        <Lane ParentPool="sid-0E7BB551-0389-40D6-8B07-A3ECAB297AC1" Id="sid-E616B6D9-4C39-490F-8896-C7FFE5A8EECE" Name="Doctorando">
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo Height="216.36362912780987" Width="1836.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="30.0" YCoordinate="569.0143428752817" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showcaption" Value="true" />
+          </ExtendedAttributes>
+        </Lane>
+        <Lane ParentPool="sid-0E7BB551-0389-40D6-8B07-A3ECAB297AC1" Id="sid-DB9DB68E-CA23-48D4-A3CB-498D228B4E89" Name="Org. responsable gestión Estudios Doctorado">
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo Height="352.6507137474718" Width="1836.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="30.0" YCoordinate="0.0" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showcaption" Value="true" />
+          </ExtendedAttributes>
+        </Lane>
+        <Lane ParentPool="sid-0E7BB551-0389-40D6-8B07-A3ECAB297AC1" Id="sid-8DF6F5B7-0CC3-4796-8FC4-061721626596" Name="Comision Doctorado ">
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo Height="216.36362912780993" Width="1836.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="30.0" YCoordinate="352.6507137474718" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showcaption" Value="true" />
+          </ExtendedAttributes>
+        </Lane>
+      </Lanes>
+      <NodeGraphicsInfos>
+        <NodeGraphicsInfo FillColor="#ffffff" Height="785.3779720030916" Width="1866.0" BorderColor="#0,0,0" ToolId="Oryx">
+          <Coordinates XCoordinate="40.0" YCoordinate="990.0" />
+        </NodeGraphicsInfo>
+      </NodeGraphicsInfos>
+    </Pool>
+    <Pool BoundaryVisible="false" MainPool="true" Process="MainPool-process" Orientation="HORIZONTAL" Id="MainPool" Name="Main Pool">
+      <NodeGraphicsInfos>
+        <NodeGraphicsInfo FillColor="#ffffff" Height="0.0" Width="0.0" BorderColor="#0,0,0" ToolId="Oryx">
+          <Coordinates XCoordinate="0.0" YCoordinate="0.0" />
+        </NodeGraphicsInfo>
+      </NodeGraphicsInfos>
+    </Pool>
+  </Pools>
+  <WorkflowProcesses>
+    <WorkflowProcess Adhoc="false" AdhocOrdering="Parallel" EnableInstanceCompensation="false" ProcessType="None" Status="None" SuppressJoinFailure="false" Id="sid-0E7BB551-0389-40D6-8B07-A3ECAB297AC1-process">
+      <ActivitySets>
+        <ActivitySet AdHoc="false" AdHocOrdering="Sequential" Id="sid-8EF6FFBD-10C0-4139-97D7-7C3A2CDC6CB8-activitySet" />
+        <ActivitySet AdHoc="false" AdHocOrdering="Sequential" Id="sid-DF9FB566-DA7C-4A11-BA2A-3D3357CE68AC-activitySet">
+          <Activities>
+            <Activity Id="sid-1389609F-7070-4145-9F57-1FBEDD82D246" Name="15 días &#xa;hábiles">
+              <Event />
+              <NodeGraphicsInfos>
+                <NodeGraphicsInfo FillColor="#ffffff" Height="30.0" Width="30.0" BorderColor="#0,0,0" ToolId="Oryx">
+                  <Coordinates XCoordinate="75.0" YCoordinate="38.0" />
+                </NodeGraphicsInfo>
+              </NodeGraphicsInfos>
+            </Activity>
+          </Activities>
+        </ActivitySet>
+        <ActivitySet AdHoc="false" AdHocOrdering="Sequential" Id="sid-0DEF44D2-051E-42D7-82CA-1958ECFB57D4-activitySet" />
+      </ActivitySets>
+      <Activities>
+        <Activity CompletionQuantity="1" IsATransaction="false" StartQuantity="1" Id="sid-8EF6FFBD-10C0-4139-97D7-7C3A2CDC6CB8" Name="Solicitar autorización presentación de tesis">
+          <BlockActivity ActivitySetId="sid-8EF6FFBD-10C0-4139-97D7-7C3A2CDC6CB8-activitySet" View="COLLAPSED" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffcc" Height="80.0" Width="100.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="120.0" YCoordinate="60.36362912780976" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="activitytype" Value="Sub-Process" />
+          </ExtendedAttributes>
+        </Activity>
+        <Activity CompletionQuantity="1" StartQuantity="1" Id="sid-57500D85-D183-498D-84AA-3C4E12E90ABE" Name="Depositar tesis doctoral">
+          <Implementation>
+            <No />
+          </Implementation>
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffcc" Height="80.0" Width="100.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="375.0" YCoordinate="24.377972003091486" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+        </Activity>
+        <Activity CompletionQuantity="1" StartQuantity="1" Id="sid-33C19739-9FC2-4571-85D9-1D540DC036FF" Name="Realizar cambios requeridos">
+          <Implementation>
+            <No />
+          </Implementation>
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffcc" Height="80.0" Width="100.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="1145.0" YCoordinate="47.72725825561963" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+        </Activity>
+        <Activity CompletionQuantity="1" StartQuantity="1" Id="sid-B9F95631-3569-4D4E-BA1D-E9D9A7CCDD2E" Name="Presentar  actualización en registro">
+          <Implementation>
+            <No />
+          </Implementation>
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffcc" Height="80.0" Width="100.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="1290.0" YCoordinate="47.72725825561963" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+        </Activity>
+        <Activity Id="sid-CBCD8C3E-74A9-4AD8-BFB0-712DFCC6C64D" Name="¿se autoriza?">
+          <Route ExclusiveType="Data" GatewayType="Exclusive" MarkerVisible="true" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffff" Height="40.0" Width="40.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="270.0" YCoordinate="80.36362912780976" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+        </Activity>
+        <Activity Id="sid-A5003C7F-4D8D-4F6D-862D-5ED3DE514F24" Name="autorización&#xa; presentación tesis &#xa;denegada">
+          <Event />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffff" Height="28.0" Width="28.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="411.0" YCoordinate="149.3779720030915" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+        </Activity>
+        <Activity CompletionQuantity="1" StartQuantity="1" Id="sid-1E3F2859-094C-4BC8-8598-5C1E3C43C99E" Name="Publicitar tesis doctoral">
+          <Implementation>
+            <No />
+          </Implementation>
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffcc" Height="80.0" Width="100.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="590.0" YCoordinate="45.0" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+        </Activity>
+        <Activity CompletionQuantity="1" IsATransaction="false" StartQuantity="1" Id="sid-DF9FB566-DA7C-4A11-BA2A-3D3357CE68AC" Name="Conservar tesis en depósito">
+          <BlockActivity ActivitySetId="sid-DF9FB566-DA7C-4A11-BA2A-3D3357CE68AC-activitySet" View="EXTENDED" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffff" Height="120.0" Width="213.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="540.0" YCoordinate="165.0" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="activitytype" Value="Sub-Process" />
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="sid-1389609F-7070-4145-9F57-1FBEDD82D246" Name="15 días &#xa;hábiles">
+          <Event />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffff" Height="30.0" Width="30.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="75.0" YCoordinate="38.0" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+        </Activity>
+        <Activity Id="sid-E06F2D86-A7D1-4585-AE1C-E9F3C42B4F8C" Name="Alegación &#xa;recibida&#xa;">
+          <Event />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffff" Height="30.0" Width="30.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="554.2131465826441" YCoordinate="270.61713993518106" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+        </Activity>
+        <Activity Id="sid-B4F9571E-74BE-4AA8-96D1-CD048E339B20" Name="¿hay &#xa;alegaciones?">
+          <Route ExclusiveType="Data" GatewayType="Exclusive" MarkerVisible="true" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffff" Height="40.0" Width="40.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="830.8359375" YCoordinate="118.5" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+        </Activity>
+        <Activity CompletionQuantity="1" StartQuantity="1" Id="sid-37F5EFF9-248B-410A-B2D2-95BAC3D04EBA" Name="Almacenar alegación ">
+          <Implementation>
+            <No />
+          </Implementation>
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffcc" Height="80.0" Width="100.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="609.2131465826441" YCoordinate="45.0" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+        </Activity>
+        <Activity Id="sid-23CA7594-CF90-4BFE-9031-47245FD90B13" Name="¿autorizar?">
+          <Route ExclusiveType="Data" GatewayType="Exclusive" MarkerVisible="true" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffff" Height="40.0" Width="40.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="945.8359375" YCoordinate="65.0" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+        </Activity>
+        <Activity CompletionQuantity="1" StartQuantity="1" Id="sid-098A45E1-7F8D-43A2-BFB7-581416C18CEB" Name="Notificar&#xa; cambios">
+          <Implementation>
+            <No />
+          </Implementation>
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffcc" Height="80.0" Width="100.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="1056.671875" YCoordinate="102.34928625252815" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+        </Activity>
+        <Activity Id="sid-0022F00E-87BB-41A2-83F8-8C01F7382441" Name="defensa &#xa;no autorizada">
+          <Event />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffff" Height="28.0" Width="28.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="1077.0078125" YCoordinate="9.523929378792218" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+        </Activity>
+        <Activity CompletionQuantity="1" StartQuantity="1" Id="sid-399E76DD-5CAE-43DD-8AAA-7E88FB917950" Name="Revisar cambios">
+          <Implementation>
+            <No />
+          </Implementation>
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffcc" Height="80.0" Width="100.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="1360.0" YCoordinate="108.34928625252815" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+        </Activity>
+        <Activity Id="sid-4D078EB3-5451-4B90-AF21-8A3A4CE71EA2" Name="¿autorizar?">
+          <Route ExclusiveType="Data" GatewayType="Exclusive" MarkerVisible="true" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffff" Height="40.0" Width="40.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="1505.0" YCoordinate="128.34928625252815" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+        </Activity>
+        <Activity Id="sid-DF5F8FFD-7F36-4214-B182-A8C5F121C283">
+          <Route ExclusiveType="Data" GatewayType="Exclusive" MarkerVisible="true" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffff" Height="40.0" Width="40.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="986.9772864273168" YCoordinate="122.33640713248587" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+        </Activity>
+        <Activity Id="sid-AE6AB1CB-2ADD-4C3B-A24E-791980DF9716">
+          <Route ExclusiveType="Data" GatewayType="Exclusive" MarkerVisible="true" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffff" Height="40.0" Width="40.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="1585.0" YCoordinate="128.34928625252815" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+        </Activity>
+        <Activity CompletionQuantity="1" StartQuantity="1" Id="sid-AF6C0733-663C-4E23-85EC-CCD10281061E" Name="Autorizar defensa de tesis">
+          <Implementation>
+            <No />
+          </Implementation>
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffcc" Height="80.0" Width="100.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="1650.0" YCoordinate="108.34928625252815" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+        </Activity>
+        <Activity CompletionQuantity="1" IsATransaction="false" StartQuantity="1" Id="sid-0DEF44D2-051E-42D7-82CA-1958ECFB57D4" Name="Estudiar alegaciones y oir opinión implicados">
+          <BlockActivity ActivitySetId="sid-0DEF44D2-051E-42D7-82CA-1958ECFB57D4-activitySet" View="COLLAPSED" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo FillColor="#ffffcc" Height="80.0" Width="100.0" BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="800.8359375" YCoordinate="45.0" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="activitytype" Value="Sub-Process" />
+          </ExtendedAttributes>
+        </Activity>
+      </Activities>
+    </WorkflowProcess>
+    <WorkflowProcess AdhocOrdering="Sequential" ProcessType="None" Status="None" SuppressJoinFailure="true" Id="MainPool-process" Name="MainProcess">
+      <Transitions>
+        <Transition From="sid-0893F235-C94E-4615-8D32-8C85F498FFA0" To="sid-8EF6FFBD-10C0-4139-97D7-7C3A2CDC6CB8" Id="sid-BBB98AAD-DB8F-43B6-B1B3-06E71FD6546C">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="49.0" YCoordinate="100.36362912780976" />
+              <Coordinates XCoordinate="170.0" YCoordinate="100.36362912780976" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-CBCD8C3E-74A9-4AD8-BFB0-712DFCC6C64D" To="sid-57500D85-D183-498D-84AA-3C4E12E90ABE" Id="sid-D340DEBB-904D-485D-9BC4-89AC73472ADF" Name="Yes">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="290.5" YCoordinate="100.86362912780976" />
+              <Coordinates XCoordinate="360.5" YCoordinate="1623.3923148783733" />
+              <Coordinates XCoordinate="425.0" YCoordinate="64.37797200309149" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-CBCD8C3E-74A9-4AD8-BFB0-712DFCC6C64D" To="sid-A5003C7F-4D8D-4F6D-862D-5ED3DE514F24" Id="sid-BC704AE1-325E-4950-8A25-1E0ACB20109C" Name="No">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="290.5" YCoordinate="100.86362912780976" />
+              <Coordinates XCoordinate="360.5" YCoordinate="1722.3923148783733" />
+              <Coordinates XCoordinate="425.0" YCoordinate="163.3779720030915" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-57500D85-D183-498D-84AA-3C4E12E90ABE" To="sid-CCD43AC3-10AA-4839-AB85-051A1748C281" Id="sid-23779873-DF14-472A-B26D-C9FBCEB16825">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="425.0" YCoordinate="64.37797200309149" />
+              <Coordinates XCoordinate="495.0" YCoordinate="1130.5" />
+              <Coordinates XCoordinate="510.5" YCoordinate="140.5" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-CCD43AC3-10AA-4839-AB85-051A1748C281" To="sid-1E3F2859-094C-4BC8-8598-5C1E3C43C99E" Id="sid-C0F72D62-8944-430C-B92B-10EDAD1749CF">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="510.5" YCoordinate="140.5" />
+              <Coordinates XCoordinate="580.5" YCoordinate="1075.0" />
+              <Coordinates XCoordinate="640.0" YCoordinate="85.0" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-CCD43AC3-10AA-4839-AB85-051A1748C281" To="sid-DF9FB566-DA7C-4A11-BA2A-3D3357CE68AC" Id="sid-493F731A-5ED3-479B-85A4-59D16996DBE1">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="510.5" YCoordinate="140.5" />
+              <Coordinates XCoordinate="580.5" YCoordinate="1215.0" />
+              <Coordinates XCoordinate="646.5" YCoordinate="225.0" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-1E3F2859-094C-4BC8-8598-5C1E3C43C99E" To="sid-CB0ECBF0-5041-4936-8B11-A42EC3CCB76B" Id="sid-51857C58-C83A-47FB-9A3C-66F67F7A41B7">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="640.0" YCoordinate="85.0" />
+              <Coordinates XCoordinate="835.5" YCoordinate="1075.0" />
+              <Coordinates XCoordinate="765.5" YCoordinate="138.5" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-DF9FB566-DA7C-4A11-BA2A-3D3357CE68AC" To="sid-CB0ECBF0-5041-4936-8B11-A42EC3CCB76B" Id="sid-0D8CF9CE-3E72-43A1-B19B-3B680F7A5BF4">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="646.5" YCoordinate="225.0" />
+              <Coordinates XCoordinate="835.0" YCoordinate="1215.0" />
+              <Coordinates XCoordinate="765.0" YCoordinate="138.0" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-5E4C4200-E99D-45AC-98A2-F25B8EE0516B" To="sid-1389609F-7070-4145-9F57-1FBEDD82D246" Id="sid-789F586E-A0D9-4510-8853-31048F5B8D49">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="30.0" YCoordinate="53.0" />
+              <Coordinates XCoordinate="90.0" YCoordinate="53.0" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-1389609F-7070-4145-9F57-1FBEDD82D246" To="sid-B32CD242-3449-4047-9F00-162DD6FE5241" Id="sid-F4BAA2D2-FACD-4B45-97E0-D4C08368329F">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="90.0" YCoordinate="53.0" />
+              <Coordinates XCoordinate="164.0" YCoordinate="53.0" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-37F5EFF9-248B-410A-B2D2-95BAC3D04EBA" To="sid-D644D978-3C59-4571-85CF-B8D4457FE639" Id="sid-471930F2-0FA7-4BD7-B1AA-E35505C76B14">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="659.2131465826441" YCoordinate="85.0" />
+              <Coordinates XCoordinate="748.2131465826441" YCoordinate="85.0" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-CB0ECBF0-5041-4936-8B11-A42EC3CCB76B" To="sid-B4F9571E-74BE-4AA8-96D1-CD048E339B20" Id="sid-D05B5994-DD78-4666-8851-C298A17A2B96">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="765.5" YCoordinate="138.5" />
+              <Coordinates XCoordinate="851.3359375" YCoordinate="139.0" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-B4F9571E-74BE-4AA8-96D1-CD048E339B20" To="sid-0DEF44D2-051E-42D7-82CA-1958ECFB57D4" Id="sid-BDC4E93F-0724-4647-AAA6-CFF153897422" Name="Sí">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="851.3359375" YCoordinate="139.0" />
+              <Coordinates XCoordinate="850.8359375" YCoordinate="85.0" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-0DEF44D2-051E-42D7-82CA-1958ECFB57D4" To="sid-23CA7594-CF90-4BFE-9031-47245FD90B13" Id="sid-8DA50DDA-87CF-4DEE-A9E5-B601918023B3">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="850.8359375" YCoordinate="85.0" />
+              <Coordinates XCoordinate="966.3359375" YCoordinate="85.5" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-23CA7594-CF90-4BFE-9031-47245FD90B13" To="sid-0022F00E-87BB-41A2-83F8-8C01F7382441" Id="sid-FC317E41-73C9-4715-B4CF-3854EDE5B75C" Name="No">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="966.3359375" YCoordinate="85.5" />
+              <Coordinates XCoordinate="1036.3359375" YCoordinate="1366.351492359888" />
+              <Coordinates XCoordinate="1091.3520091838193" YCoordinate="23.70077861241611" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-098A45E1-7F8D-43A2-BFB7-581416C18CEB" To="sid-33C19739-9FC2-4571-85D9-1D540DC036FF" Id="sid-F9F31729-C234-48A6-8F70-2B4BEC8967AA">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="1106.671875" YCoordinate="142.34928625252815" />
+              <Coordinates XCoordinate="1176.671875" YCoordinate="1646.7416011309015" />
+              <Coordinates XCoordinate="1195.0" YCoordinate="87.72725825561963" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-33C19739-9FC2-4571-85D9-1D540DC036FF" To="sid-B9F95631-3569-4D4E-BA1D-E9D9A7CCDD2E" Id="sid-2BFB0DEC-5143-4CD6-A8FD-EAAD91685DB6">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="1195.0" YCoordinate="87.72725825561963" />
+              <Coordinates XCoordinate="1340.0" YCoordinate="87.72725825561963" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-B9F95631-3569-4D4E-BA1D-E9D9A7CCDD2E" To="sid-399E76DD-5CAE-43DD-8AAA-7E88FB917950" Id="sid-1524141A-6F2C-42EC-A22F-8F54F4911794">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="1340.0" YCoordinate="87.72725825561963" />
+              <Coordinates XCoordinate="1480.0" YCoordinate="1646.7416011309015" />
+              <Coordinates XCoordinate="1410.0" YCoordinate="148.34928625252815" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-399E76DD-5CAE-43DD-8AAA-7E88FB917950" To="sid-4D078EB3-5451-4B90-AF21-8A3A4CE71EA2" Id="sid-5873CBDA-B024-4B70-A3AB-25CBF0FE0325">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="1410.0" YCoordinate="148.34928625252815" />
+              <Coordinates XCoordinate="1525.5" YCoordinate="148.84928625252815" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-DF5F8FFD-7F36-4214-B182-A8C5F121C283" To="sid-098A45E1-7F8D-43A2-BFB7-581416C18CEB" Id="sid-D997A4C7-59F0-4120-BC32-61947B10E0E8">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="1007.4772864273168" YCoordinate="142.83640713248587" />
+              <Coordinates XCoordinate="1106.671875" YCoordinate="142.34928625252815" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-4D078EB3-5451-4B90-AF21-8A3A4CE71EA2" To="sid-AE6AB1CB-2ADD-4C3B-A24E-791980DF9716" Id="sid-ADD30357-7E1B-4C70-ACD1-7574F2CBD941" Name="Sí">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="1525.5" YCoordinate="148.84928625252815" />
+              <Coordinates XCoordinate="1605.5" YCoordinate="148.84928625252815" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-AE6AB1CB-2ADD-4C3B-A24E-791980DF9716" To="sid-AF6C0733-663C-4E23-85EC-CCD10281061E" Id="sid-50FAE103-41DB-491D-8A0C-6D8EFBDEBD55">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="1605.5" YCoordinate="148.84928625252815" />
+              <Coordinates XCoordinate="1700.0" YCoordinate="148.34928625252815" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-AF6C0733-663C-4E23-85EC-CCD10281061E" To="sid-0D96699D-2584-4B51-BF38-0190B6A125F4" Id="sid-C4A21E68-3431-4994-9FA3-29521E2088DF">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="1700.0" YCoordinate="148.34928625252815" />
+              <Coordinates XCoordinate="1789.0" YCoordinate="148.34928625252815" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-4D078EB3-5451-4B90-AF21-8A3A4CE71EA2" To="sid-DF5F8FFD-7F36-4214-B182-A8C5F121C283" Id="sid-0E5FFDCC-ABC3-4E01-98F2-144323A5B811" Name="No">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="1525.5" YCoordinate="148.84928625252815" />
+              <Coordinates XCoordinate="1595.5" YCoordinate="1428.1507137474719" />
+              <Coordinates XCoordinate="1077.4772864273168" YCoordinate="1428.1507137474719" />
+              <Coordinates XCoordinate="1007.4772864273168" YCoordinate="142.83640713248587" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-B4F9571E-74BE-4AA8-96D1-CD048E339B20" To="sid-AE6AB1CB-2ADD-4C3B-A24E-791980DF9716" Id="sid-13367357-B1EF-463A-8E45-0E0D9D1B5C54" Name="No">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="851.3359375" YCoordinate="139.0" />
+              <Coordinates XCoordinate="1675.5" YCoordinate="1129.0" />
+              <Coordinates XCoordinate="1605.5" YCoordinate="148.84928625252815" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-E06F2D86-A7D1-4585-AE1C-E9F3C42B4F8C" To="sid-37F5EFF9-248B-410A-B2D2-95BAC3D04EBA" Id="sid-079C9DDE-BF57-4F29-9FC2-4266728BCE11">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="569.2131465826441" YCoordinate="285.61713993518106" />
+              <Coordinates XCoordinate="639.2131465826441" YCoordinate="1427.6507137474719" />
+              <Coordinates XCoordinate="659.2131465826441" YCoordinate="85.0" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-23CA7594-CF90-4BFE-9031-47245FD90B13" To="sid-DF5F8FFD-7F36-4214-B182-A8C5F121C283" Id="sid-8371318C-3894-47CC-A105-45BC946AB6D7" Name="Sí">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="966.3359375" YCoordinate="85.5" />
+              <Coordinates XCoordinate="1036.3359375" YCoordinate="1485.4871208799577" />
+              <Coordinates XCoordinate="1007.4772864273168" YCoordinate="142.83640713248587" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+        <Transition From="sid-8EF6FFBD-10C0-4139-97D7-7C3A2CDC6CB8" To="sid-CBCD8C3E-74A9-4AD8-BFB0-712DFCC6C64D" Id="sid-B2977779-55D5-4422-9FA1-6E841AC4A527">
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo BorderColor="#0,0,0" ToolId="Oryx">
+              <Coordinates XCoordinate="170.0" YCoordinate="100.36362912780976" />
+              <Coordinates XCoordinate="290.0" YCoordinate="100.36362912780976" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="showdiamondmarker" Value="false" />
+          </ExtendedAttributes>
+        </Transition>
+      </Transitions>
+    </WorkflowProcess>
+  </WorkflowProcesses>
+</Package>

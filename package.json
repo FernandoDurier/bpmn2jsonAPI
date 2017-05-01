@@ -9,6 +9,7 @@
   "author": "Fernando Cardoso Durier da Silva",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "bpmn": "^0.2.2",
     "bpmn-js": "^0.19.0",
     "bpmn-js-cli": "^0.15.0",
@@ -24,6 +25,8 @@
     "nlp_compromise": "^6.5.3",
     "q": "^1.4.1",
     "request": "^2.79.0",
-    "xml2js": "^0.4.17"
+    "xml2js": "^0.4.17",
+    "xmljson": "^0.2.0",
+    "xslt": "^0.8.0"
   }
 }

@@ -1,25 +1,41 @@
-var fs = require('fs'),
-    xml2js = require('xml2js');
+var fs = require('fs');
+var to_json = require('xmljson').to_json;
+var reader = require('./xmlReader.js');
+var refiner = require('./xmlRefinement.js');
 var beautify = require("json-beautify");
 var Q = require('q');
 
-exports.bpm2json = function(){
+exports.bpm2json = function(filename,newname){
 var bpDefer = Q.defer();
-var parser = new xml2js.Parser();
 
-fs.readFile('./bpmn/teste de xml.xml', function(err, data) {
-    parser.parseString(data, function (err, result) {
-        //console.log(beautify(result,null,2,100));
-        //console.log(result.process.laneSet[0].lane);
-        bpDefer.resolve(result);
-        fs.writeFile('./bpmn/teste de xml.json',JSON.stringify(result),function(err,data){
-          if(err){
-            console.log(err);
-          }
-        });
-        console.log('Done');
-    });
-});
+reader.xmlReader(filename)
+.then(
+  function(data){
+    //console.log("data.status: ",data.status);
+    refiner.refinement(data.body)
+    .then(
+      function(data){
+        //console.log("Refineded: ",data.body);
+        bpDefer.resolve({"status":data.status,"body":data.body});
+      }
+    );
+  }
+);
+
 return (bpDefer.promise);
+}
 
+exports.directjson = function(xml){
+var bpDefer = Q.defer();
+
+    refiner.refinement(xml)
+    .then(
+      function(data){
+        //console.log("Refineded: ",data.body);
+        bpDefer.resolve({"status":data.status,"body":data.body});
+      }
+    );
+
+
+return (bpDefer.promise);
 }
