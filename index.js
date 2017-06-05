@@ -19,6 +19,10 @@ var directJSON = function(req,res){
 
 }
 
+var implicitConverter = function(req,res){ //converts bpmn already existant to natural language
+  
+}
+
 var express = require('express');
 
 var app = express();
@@ -32,5 +36,6 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 
 app.post('/bpmn2json/file',getBPJSON);
 app.post('/bpmn2json/string',directJSON);
+app.post('/bpm2nl',implicitConverter);
 
 app.listen(3000);

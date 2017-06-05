@@ -11,11 +11,11 @@ var bpDefer = Q.defer();
 reader.xmlReader(filename)
 .then(
   function(data){
-    //console.log("data.status: ",data.status);
+    console.log("data.status: ",data.status);
     refiner.refinement(data.body)
     .then(
       function(data){
-        //console.log("Refineded: ",data.body);
+        console.log("Refineded: ",data.body);
         bpDefer.resolve({"status":data.status,"body":data.body});
       }
     );
